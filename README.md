@@ -1,6 +1,7 @@
 # lem1_9min
 Logic Emulation Machine
-Four new variants of LEM1_9 are now implemented: 
+Four new variants of LEM1_9 are now implemented.  There is also the untested design LEM16_18 which combines a 16-bit accumulator
+ISA with bit field access to memory.
 
 LEM1_9 
 Call/Return/Conditional branches implemented along with a return address stack. 
