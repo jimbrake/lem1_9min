@@ -47,12 +47,14 @@ Small soft core processors that operate on a single bit (or four bits) of data a
 Can be used for logic simulation, software interrupt handlers, low resource soft-core processing and BCD calculators  
 
 ## Performance  
-Processor - - Device - - - - - LUT count - Fmax(in MHz)  
-LEM1_9min  - -Kintex-7-3 - - - - - -39 - - - - 350 - (in practice a ~20 bit counter needed and I/O ports adding ~40 LUTs)  
-LEM1_9 - - - -Kintex-7-3 - - - - - -75 - - - - 171 - (currently limited to 32 bits of data RAM)  
-LEM1_9ptr - - Kintex-7-3 - - - - - 105 - - - - 170 - (limited to 512 bits of data RAM)  
-LEM4_9 - - - -Kintex-7-3 - - - - - 144 - - - - 195 - (currently limited to 32 digits of data RAM)  
-LEM4_9ptr - - Kintex-7-3 - - - - - 151 - - - - 145 - (limited to 512 digits of data RAM)  
+___________________________________________________________________________  
+|Processor     |Device         |LUT cnt   |Fmax MHz |comments        |  
+|---------|----------|:---:|:-----:|---------|  
+|LEM1_9min |Kintex-7-3|39 |350|(in practice a ~20 bit counter needed and I/O ports adding ~40 LUTs)  
+|LEM1_9ptr |Kintex-7-3|105|170|(limited to 512 bits of data RAM)  
+|LEM4_9    |Kintex-7-3|144|195|(currently limited to 32 digits of data RAM)  
+|LEM4_9ptr |Kintex-7-3|151|145|(limited to 512 digits of data RAM)  
+____________________________________________________________________________  
 (all instructions execute in one clock cycle)  
 (all versions use half of a block RAM for program memory):  
 (a two stage pipeline increases Fmax)  
